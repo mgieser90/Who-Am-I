@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Lato", sans-serif;
+}
+
+hr {
+  width: 80px;
+  border-bottom: 5px solid #ff5200;
+  border-top: 0;
+  margin-top: -10px;
+}
+
+body {
+  margin: 0;
+}
+
+p,
+li {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #363636;
+}
+
+address p {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.office-name {
+  color: #f26823;
+  padding-top: 100px;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+}
+
+#who-i-am {
+  display: flex;
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 100px;
+}
+
+#name-text {
+  position: absolute;
+  background: #f26823;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#name-text h5 {
+  margin: 0;
+  padding-left: 20px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+#click-trigger {
+  position: fixed;
+  background-color: #05121a;
+  left: -275px;
+  transition: left .5s ease;
+  height: 100%;
+  width: 275px;
+  z-index: 101;
+  border-right: 1px solid #ccc;
+}
+
+#click-trigger li a {
+  display: block;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-family: "raleway", sans-serif;
+  font-size: 15px;
+  background-color: transparent;
+  width: 100%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+#click-trigger ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+#click-trigger li {
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.material-icons.nav {
+  color: #f0f0f0;
+  margin: 0 20px;
+}
+
+#mobile-nav-exit {
+  position: fixed;
+  margin: 0;
+  top: 5px;
+  right: -70px;
+  background-color: transparent;
+  transition: right .5s ease;
+  z-index: 101;
+}
+
+#mobile-nav-background {
+  display: none;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  z-index: 100;
+}
+
+.material-icons.nav-exit {
+  color: #f0f0f0;
+  margin: 0;
+  font-size: 40px;
+}
+
+.material-icons.nav-exit:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#resume-menu {
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #05121a;
+  background-image: url(https://www.twobarrels.com/wp-content/themes/two-barrels/assets/img/tboverlay4.png);
+  background-size: 300px;
+  background-position: -100px bottom;
+  background-repeat: no-repeat;
+  min-height: 150px;
+}
+
+.logo-img {
+  margin-bottom: 10px;
+  transform: scale(0.35);
+  overflow: visible;
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+#person-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 546px;
+  background: #f0f0f0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  color: #363636;
+  padding: 68px 17px 0 17px;
+}
+
+#person-container h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: normal;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  margin-top: 16px;
+}
+
+#contact-section {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 35px;
+}
+
+#contact-section h3 {
+  letter-spacing: .6px;
+  line-height: 1.6;
+}
+
+.material-icons {
+  position: relative;
+  color: #003355;
+  top: 5px;
+  margin-top: 15px;
+}
