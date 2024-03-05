@@ -102,6 +102,15 @@ img {
   padding-bottom: .5em;
 }
 
+#click-trigger li a:hover {
+  background: #003454;
+}
+
+#click-trigger a.current-menu-item,
+#click-trigger i.current-menu-item {
+  color: #f26823;
+}
+
 #click-trigger ul {
   margin: 0;
   padding: 0;
