@@ -231,3 +231,62 @@ img {
   top: 5px;
   margin-top: 15px;
 }
+
+@media screen and (min-width: 47.5em) {
+
+  p,
+  li {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  #lower-section h4 {
+    font-size: 2rem;
+  }
+
+  .page-content {
+    padding-left: 260px;
+  }
+
+  .header {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+
+  }
+
+  .logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  #resume-menu {
+    display: none;
+  }
+
+  #click-trigger {
+    left: 0px;
+    position: static;
+    width: 260px;
+    border: 0;
+    background-image: url(https://www.twobarrels.com/wp-content/themes/two-barrels/assets/img/tboverlay4.png);
+    background-repeat: no-repeat;
+    background-size: 660px;
+    background-position: -200px bottom;
+  }
+
+  #click-trigger li {
+    border: 0;
+  }
+
+  #mission-statement {
+    min-height: 475px;
+    padding-top: 100px;
+  }
+
+  #hire-me {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
