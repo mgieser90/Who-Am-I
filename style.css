@@ -220,11 +220,6 @@ img {
   padding: 35px;
 }
 
-#contact-section h3 {
-  letter-spacing: .6px;
-  line-height: 1.6;
-}
-
 .material-icons {
   position: relative;
   color: #003355;
@@ -238,10 +233,6 @@ img {
   li {
     font-size: 19px;
     line-height: 30px;
-  }
-
-  #lower-section h4 {
-    font-size: 2rem;
   }
 
   .page-content {
@@ -277,11 +268,6 @@ img {
 
   #click-trigger li {
     border: 0;
-  }
-
-  #mission-statement {
-    min-height: 475px;
-    padding-top: 100px;
   }
 }
 
