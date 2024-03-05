@@ -283,10 +283,10 @@ img {
     min-height: 475px;
     padding-top: 100px;
   }
+}
 
-  #hire-me {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 62.5em) {
+  #person-container h1 {
+    font-size: 3rem;
   }
 }
