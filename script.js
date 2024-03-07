@@ -80,6 +80,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  mobileNavBackground.addEventListener('click', function () {
+    hideNav();
+  });
+
+  navExit.addEventListener('click', function () {
+    hideNav();
+  });
+
   contactMeButton.addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the default behavior of the anchor element
     hideNav(); // Hide navigation when opening contact elements
