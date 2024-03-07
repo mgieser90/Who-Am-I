@@ -43,34 +43,55 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileNavBackground = document.getElementById('mobile-nav-background');
   const navExit = document.getElementById('mobile-nav-exit');
 
-  navBar.style.left = '-275px'; // Set initial state to hidden
-  mobileNavBackground.style.display = 'none';
-  navExit.style.right = '-70px'; // Set initial state to hidden
+  const contactMePopUp = document.getElementById('contact-me-pop-up');
+  const contactMeButton = document.getElementById('contact-me');
+  const contactMeBackground = document.getElementById('contact-me-background');
+  const contactExit = document.getElementById('contact-exit');
+
+  function hideNav() {
+    navBar.style.left = '-275px';
+    mobileNavBackground.style.display = 'none';
+    navExit.style.right = '-70px';
+  }
+
+  function showContact() {
+    contactMePopUp.style.display = 'flex';
+    contactMeBackground.style.display = 'block';
+    contactExit.style.display = 'block';
+  }
+
+  function hideContact() {
+    contactMePopUp.style.display = 'none';
+    contactMeBackground.style.display = 'none';
+    contactExit.style.display = 'none';
+  }
+
+  hideNav(); // Initially hide the navigation elements
+  hideContact(); // Initially hide the contact elements
 
   resumeMenuButton.addEventListener('click', function () {
+    hideContact(); // Hide contact elements when opening the navigation
     if (navBar.style.left === '-275px') {
       navBar.style.left = '0';
       mobileNavBackground.style.display = 'block';
       navExit.style.right = '10px';
     } else {
-      navBar.style.left = '-275px';
-      mobileNavBackground.style.display = 'none';
-      navExit.style.right = '-70px';
+      hideNav(); // Hide navigation when closing
     }
   });
 
-  mobileNavBackground.addEventListener('click', function () {
-    // Close the navigation when mobileNavBackground is clicked
-    navBar.style.left = '-275px';
-    mobileNavBackground.style.display = 'none';
-    navExit.style.right = '-70px';
+  contactMeButton.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default behavior of the anchor element
+    hideNav(); // Hide navigation when opening contact elements
+    showContact(); // Show contact elements
   });
 
-  navExit.addEventListener('click', function () {
-    // Close the navigation when navExit is clicked
-    navBar.style.left = '-275px';
-    mobileNavBackground.style.display = 'none';
-    navExit.style.right = '-70px';
+  contactMeBackground.addEventListener('click', function () {
+    hideContact(); // Hide contact elements when clicking background
+  });
+
+  contactExit.addEventListener('click', function () {
+    hideContact(); // Hide contact elements when clicking exit button
   });
 });
 
